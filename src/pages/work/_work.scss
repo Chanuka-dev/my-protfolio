@@ -1,0 +1,48 @@
+@import "../../abstracts/variables";
+.work {
+  background-color: $color-primary-light;
+  &_freelancer {
+    &-set {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &-icon {
+        margin: 1rem;
+      }
+
+      &-icon-fiver {
+        &-svg {
+          width: 6rem;
+          height: 6rem;
+        }
+      }
+      &-icon-upwork {
+        &-svg {
+          width: 6rem;
+          height: 6rem;
+        }
+      }
+
+      &-icon-facebook {
+        &-svg {
+          width: 6rem;
+          height: 6rem;
+        }
+      }
+
+      &-icon-instergram {
+        &-svg {
+          width: 6rem;
+          height: 6rem;
+        }
+      }
+
+      &-icon-linkedin {
+        &-svg {
+          width: 6rem;
+          height: 6rem;
+        }
+      }
+    }
+  }
+}

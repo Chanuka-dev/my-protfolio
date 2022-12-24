@@ -1,0 +1,199 @@
+@import "../../abstracts/variables";
+.section {
+  background-color: $color-primary;
+  padding: 3rem;
+  height: 100vh;
+  .section_header {
+    margin-top: 0rem;
+    display: flex;
+    padding-bottom: 5rem;
+    &-des {
+      flex: 50%;
+      &-main {
+        margin: 6rem 0rem 0 10rem;
+
+        &-head1 {
+          font-size: 3rem;
+          background-color: $color-secondary-light;
+          border-radius: 1rem;
+          display: inline;
+          padding: 0 2rem;
+          color: $color-primary-dark;
+        }
+        &-head2 {
+          font-size: 4rem;
+          font-weight: 200;
+          margin-top: 5rem;
+        }
+        &-para {
+          margin-top: 5rem;
+          font-size: 2rem;
+          color: $color-grey-dark;
+        }
+        // &-button {
+        // }
+      }
+    }
+
+    &-profile {
+      display: flex;
+      color: $color-white;
+      margin-top: 6rem;
+      &-work {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-year {
+          font-size: 6rem;
+        }
+        &-exp {
+          font-size: 2rem;
+          color: $color-grey-dark;
+          padding-left: 2rem;
+        }
+      }
+    }
+
+    &-pict {
+      display: flex;
+      justify-content: center;
+      flex: 50%;
+      width: 100%;
+
+      &:hover > .section_header-sercal-icon {
+        animation: p-icon 10s;
+      }
+
+      &-img {
+        z-index: 10;
+      }
+    }
+
+    &-sercal {
+      position: absolute;
+      background-color: $color-img-bg;
+      width: 55rem;
+      height: 55rem;
+      // z-index: -1;
+      margin-top: 5rem;
+      border-radius: 10000px;
+      // box-shadow: 0rem 0.5rem 1rem rgba($color-black, 0.2);
+
+      &:hover > .section_header-sercal-icon {
+        animation: p-icon 1s forwards;
+      }
+
+      &-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        background-color: $color-primary-dark;
+        width: 10rem;
+        height: 10rem;
+        z-index: 20;
+        // margin-top: 8.5rem;
+        border-radius: 10000px;
+        box-shadow: -1rem 1rem 1rem rgba($color-black, 0.2);
+
+        // &:hover > {
+        //   animation: p-icon 2s;
+        // }
+
+        &-html {
+          top: 0rem;
+          left: 5rem;
+
+          &-svg {
+            height: 5rem;
+            width: 5rem;
+          }
+        }
+
+        &-css {
+          bottom: 0rem;
+          left: 5rem;
+
+          &-svg {
+            height: 5rem;
+            width: 5rem;
+          }
+        }
+
+        &-sass {
+          top: -5rem;
+          right: 8rem;
+          width: 7rem;
+          height: 7rem;
+
+          &-svg {
+            height: 4rem;
+            width: 4rem;
+          }
+        }
+
+        &-javascript {
+          top: 20rem;
+          left: -1rem;
+          width: 9rem;
+          height: 9rem;
+
+          &-svg {
+            height: 4rem;
+            width: 4rem;
+          }
+        }
+
+        &-react {
+          top: 35rem;
+          right: 1rem;
+          width: 8rem;
+          height: 8rem;
+
+          &-svg {
+            height: 4rem;
+            width: 4rem;
+          }
+        }
+
+        &-redux {
+          top: 40rem;
+          right: 20rem;
+          width: 10rem;
+          height: 10rem;
+
+          &-svg {
+            height: 5rem;
+            width: 5rem;
+          }
+        }
+
+        &-node {
+          top: 15rem;
+          right: 10rem;
+          width: 13rem;
+          height: 13rem;
+
+          &-svg {
+            height: 7rem;
+            width: 7rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes p-icon {
+  0% {
+    scale: 1;
+  }
+
+  50% {
+    scale: 1;
+  }
+
+  100% {
+    scale: 1.2;
+  }
+}

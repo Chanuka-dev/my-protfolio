@@ -1,0 +1,139 @@
+@import "../../abstracts/_variables.scss";
+.part1 {
+  padding: 3rem;
+  background-color: $color-primary-light;
+  padding-top: 10rem;
+
+  &_about {
+    display: flex;
+    justify-content: space-evenly;
+    &-skill {
+      &-container {
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        padding: 0 1rem 0.1rem 1rem;
+        margin-bottom: 0.7rem;
+        height: 6.5rem;
+        width: 40rem;
+        background-color: $color-primary;
+
+        &:hover {
+          box-shadow: 0rem 2rem 3rem rgba($color-black, 0.2);
+          z-index: 63;
+          color: $color-secondary-light;
+        }
+
+        &-head {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 1rem 0 0.5rem 0;
+
+          &-lng {
+            font-size: 1.5rem;
+            font-weight: 400;
+            padding-left: 1rem;
+          }
+          &-svg {
+            &-icon {
+              width: 2.5rem;
+              height: 2.5rem;
+              padding-right: 1rem;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+        }
+        &-bar {
+          // margin-bottom: 5rem;
+          width: 100%;
+          height: 1.2rem;
+          background-color: $color-primary-light;
+          border: 1px solid $color-primary-light;
+          border-radius: 5px;
+          box-shadow: 0 0 1px rbg(245, 159, 0);
+
+          &-precentage-html {
+            display: block;
+            height: 100%;
+            background-color: $color-secondary-light;
+            margin-left: 0 auto;
+            border-radius: 5px;
+            width: 85%;
+          }
+
+          &-precentage-css {
+            display: block;
+            height: 100%;
+            background-color: $color-secondary-light;
+            width: 75%;
+            margin-left: 0 auto;
+            border-radius: 5px;
+          }
+
+          &-precentage-javascript {
+            display: block;
+            height: 100%;
+            background-color: $color-secondary-light;
+            width: 90%;
+            margin-left: 0 auto;
+            border-radius: 5px;
+          }
+
+          &-precentage-react {
+            display: block;
+            height: 100%;
+            background-color: $color-secondary-light;
+            width: 85%;
+            margin-left: 0 auto;
+            border-radius: 5px;
+          }
+
+          &-precentage-redux {
+            display: block;
+            height: 100%;
+            background-color: $color-secondary-light;
+            width: 75%;
+            margin-left: 0 auto;
+            border-radius: 5px;
+          }
+
+          &-precentage-node {
+            display: block;
+            height: 100%;
+            background-color: $color-secondary-light;
+            width: 75%;
+            margin-left: 0 auto;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+    &-me {
+      width: 40rem;
+      height: 6rem;
+      &-indt {
+        font-size: 1.5rem;
+        color: $color-grey-dark;
+        margin-bottom: 1.5rem;
+      }
+
+      &-name {
+        font-size: 3.5rem;
+        margin-bottom: 2rem;
+      }
+
+      &-short {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      &-deatails {
+        font-size: 1.5rem;
+        color: $color-grey-dark;
+      }
+    }
+  }
+}

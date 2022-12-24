@@ -1,0 +1,19 @@
+@import "../../abstracts/variables";
+
+.button_main {
+  color: $color-secondary-light;
+  font-weight: 300;
+  font-size: 2rem;
+  text-decoration: none;
+  letter-spacing: 4px;
+  padding: 0rem 0rem;
+  border: none;
+  background-color: $color-primary-dark;
+  text-transform: uppercase;
+
+  border-bottom: 0.2rem solid $color-secondary-light;
+
+  &:hover {
+    box-shadow: 0rem 1rem 2rem rgba($color-black, 0.2);
+  }
+}
